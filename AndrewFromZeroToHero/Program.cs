@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.NetworkInformation;
+using System.Threading.Channels;
 
 namespace AndrewFromZeroToHero
 {
@@ -7,49 +8,83 @@ namespace AndrewFromZeroToHero
     {
         static void Main(string[] args)
         {
-            // input values
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("n= ");
+            Console.WriteLine("m= ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int m = Convert.ToInt32(Console.ReadLine());
+            int[,] numbers = new int[n, m];
 
-            int a = 0;
-            int b = 0;
+            //Random rand = new Random();
 
-            //string inputA = Console.ReadLine();
-            //string inputB = Console.ReadLine();
-
-            //a = Convert.ToInt32(inputA);
-            //b = Convert.ToInt32(inputB);
-
-            //// do smth
-            //int sum = Sum(a, b);
-
-            int[] numbers = new[] {3, 5, 8, 3, 10};
-
-            Random rand = new Random();
-
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < n; i++)
             {
-                numbers[i] = rand.Next(100);
+                for (int j = 0; j < m; j++)
+                {
+                    numbers[i, j] = 1; //rand.Next(100);
+                }
+
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"{numbers[i, j]:D1} ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            // fill upper right with zeros
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = i; j < n; j++)
+                {
+                    numbers[i, j] = 0;
+                }
+
+            }
+
+            // print
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"{numbers[i, j]:D1} ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = n - i - 1; j < n; j++)
+                {
+                    numbers[i, j] = 0;
+                }
             }
 
 
 
-            numbers[3] = 444;
-
-            for (int i = 0; i < numbers.Length; i++)
+            // print
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine(numbers[i]);
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"{numbers[i, j]:D1} ");
+                }
+                Console.WriteLine();
             }
-
+            Console.WriteLine();
+            Console.WriteLine();
 
             // print results
             //Console.WriteLine($"Sum = {sum}");
-        }
-
-
-
-        public static int Sum(int a, int b)
-        {
-            return a + b;
         }
 
 
