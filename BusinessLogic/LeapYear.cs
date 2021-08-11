@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leapyear
+﻿namespace BusinessLogic
 {
-    public class BusinessLogic
+    public class LeapYear
     {
         public static bool IsLeapYear(int year)
         {

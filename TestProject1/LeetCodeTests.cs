@@ -1,9 +1,9 @@
-using AndrewFromZeroToHero;
+
+using BusinessLogic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 using CollectionAssert = NUnit.Framework.CollectionAssert;
-using Program = AndrewFromZeroToHero.Program;
 
 namespace TestProject1
 {

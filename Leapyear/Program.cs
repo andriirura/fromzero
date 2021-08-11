@@ -1,4 +1,5 @@
 ﻿using System;
+using BusinessLogic;
 
 namespace Leapyear
 {
@@ -11,7 +12,7 @@ namespace Leapyear
             int year = Convert.ToInt32(Console.ReadLine());
 
             // business logic
-            bool isLeapYear = BusinessLogic.IsLeapYear(year);
+            bool isLeapYear = LeapYear.IsLeapYear(year);
             
             // output data
             if (isLeapYear)
