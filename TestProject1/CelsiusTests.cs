@@ -15,10 +15,10 @@ namespace TestProject1
         [Test]
         [TestCase(40,"then Its Very Hot")]
         [TestCase(-5, "Freezing weather")]
-        [TestCase(10, "Very Cold weather")]
-        [TestCase(20, "Cold weather")]
-        [TestCase(30, "Normal in Temp")]
-        [TestCase(30, "then Its Very Hot")]
+        [TestCase(10, "Cold weather")]
+        [TestCase(20, "Normal in Temp")]
+        [TestCase(30, "Its Hot")]
+        [TestCase(30, "Its Hot")]
         public void CelsiusTest(int temp, string expectedResult)
         {
             string result = CelsiusLogic.Celsius(temp);
