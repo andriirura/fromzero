@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ceasar", "Ceasar\Ceasar.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsignmentShopUI", "ConsignmentShopUI\ConsignmentShopUI.csproj", "{3D9DF826-4957-445F-B8AA-21600D2493C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignmentShopLibrary", "ConsignmentShopLibrary\ConsignmentShopLibrary.csproj", "{9CA6E99B-FB23-4DB6-91D0-5AC1C132D246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsignmentShopLibrary", "ConsignmentShopLibrary\ConsignmentShopLibrary.csproj", "{9CA6E99B-FB23-4DB6-91D0-5AC1C132D246}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lessons", "Tests\Lessons.csproj", "{2B00265D-1381-40A9-82A2-4A322BB58F1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homework.csproj", "{47718E8A-31D7-45FD-8D87-7195111A2CA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{9CA6E99B-FB23-4DB6-91D0-5AC1C132D246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CA6E99B-FB23-4DB6-91D0-5AC1C132D246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CA6E99B-FB23-4DB6-91D0-5AC1C132D246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B00265D-1381-40A9-82A2-4A322BB58F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B00265D-1381-40A9-82A2-4A322BB58F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B00265D-1381-40A9-82A2-4A322BB58F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B00265D-1381-40A9-82A2-4A322BB58F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
