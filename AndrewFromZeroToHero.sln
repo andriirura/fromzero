@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsignmentShopLibrary", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lessons", "Tests\Lessons.csproj", "{2B00265D-1381-40A9-82A2-4A322BB58F1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homework.csproj", "{47718E8A-31D7-45FD-8D87-7195111A2CA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework", "Homework\Homework.csproj", "{47718E8A-31D7-45FD-8D87-7195111A2CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47718E8A-31D7-45FD-8D87-7195111A2CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
