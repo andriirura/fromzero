@@ -2,60 +2,30 @@
 
 class GFG
 {
-    // method to form lower
-    // triangular matrix
-    static void lower(int[,] matrix,
-        int row, int col)
+    static String FirstAndLast(String str)
     {
-        int i, j;
-        for (i = 0; i < row; i++)
+
+        // Split the String based on the space
+        String[] arrOfStr = str.Split(' ');
+
+        // String to store the resultant String
+        String res = "";
+
+        // Traverse the words and
+        // remove the first and last letter
+        foreach (String a in arrOfStr)
         {
-            for (j = 0; j < col; j++)
-            {
-                if (i < j)
-                {
-                    Console.Write("0" + " ");
-                }
-                else
-                    Console.Write(matrix[i, j] + " ");
-            }
-            Console.WriteLine();
+            res += a.Substring(1, a.Length - 2) + " ";
         }
+
+        return res;
     }
 
-    // Method to form upper
-    // triangular matrix
-    static void upper(int[,] matrix,
-        int row, int col)
+    // Driver code
+    public static void Main(String[] args)
     {
-        int i, j;
-        for (i = 0; i < row; i++)
-        {
-            for (j = 0; j < col; j++)
-            {
-                if (i > j)
-                {
-                    Console.Write("0" + " ");
-                }
-                else
-                    Console.Write(matrix[i, j] + " ");
-            }
-            Console.WriteLine();
-        }
-    }
-
-    // Driver Code
-    static public void Main()
-    {
-        int[,] matrix = {{1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}};
-        int row = 3, col = 3;
-
-        Console.WriteLine("Lower triangular matrix: ");
-        lower(matrix, row, col);
-
-        Console.WriteLine("Upper triangular matrix: ");
-        upper(matrix, row, col);
+        String str = "Geeks for Geeks";
+        Console.WriteLine(str);
+        Console.WriteLine(FirstAndLast(str));
     }
 }

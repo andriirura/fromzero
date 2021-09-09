@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentAssertions;
+using NUnit.Framework;
 
-namespace BusinessLogic
+namespace TestProject1.SimpleTasks
 {
-    public class LongestWordInString
+    //https://www.w3resource.com/csharp-exercises/basic/csharp-basic-exercise-16.php
+    [TestFixture]
+    class Basic16test
     {
-        public static string GetLongestWord(string text)
+        public static string ChangeIndex(string text)
         {
 
 
             // split string into words
             var words = new List<string>();
-            string max = "";
+            string change = "";
             while (text.Length > 0)
             {
                 int indexOfSpace = text.IndexOf(' ');
@@ -35,13 +39,13 @@ namespace BusinessLogic
             // find longest word
             foreach (string item in words)
             {
-                if (item.Length > max.Length)
+                if (item.Length > change.Length)
                 {
-                    max = item;
+                    change = item;
                 }
             }
 
-            return max;
+            return change;
         }
     }
 }
