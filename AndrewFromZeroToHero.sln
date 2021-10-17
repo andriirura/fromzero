@@ -27,7 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lessons", "Tests\Lessons.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework", "Homework\Homework.csproj", "{47718E8A-31D7-45FD-8D87-7195111A2CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matrix", "Matrix\Matrix.csproj", "{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "GameOfLife\GameOfLife.csproj", "{1EFF63DD-B460-4918-99D5-8C8C5876E4C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTesterUI", "CodeTesterUI\CodeTesterUI.csproj", "{42CA6171-CA2E-4A9A-998F-F30F309D8CF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5A3EDE9-5E12-4487-810D-701DAACF1C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EFF63DD-B460-4918-99D5-8C8C5876E4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFF63DD-B460-4918-99D5-8C8C5876E4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFF63DD-B460-4918-99D5-8C8C5876E4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFF63DD-B460-4918-99D5-8C8C5876E4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CA6171-CA2E-4A9A-998F-F30F309D8CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CA6171-CA2E-4A9A-998F-F30F309D8CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CA6171-CA2E-4A9A-998F-F30F309D8CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CA6171-CA2E-4A9A-998F-F30F309D8CF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
