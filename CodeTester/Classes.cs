@@ -95,7 +95,7 @@ namespace CodeTester
             andrew.Eat(new Apple());
             cabron.Eat(new Pumpkin());
 
-            cabron.Eat(new FoodItem());
+           //cabron.Eat(new FoodItem());
 
 
             foreach (var item in allPlayers)

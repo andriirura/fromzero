@@ -10,7 +10,7 @@ namespace TestProject1.SimpleTasks
 {
     //https://www.w3resource.com/csharp-exercises/basic/csharp-basic-exercise-9.php
     [TestFixture]
-    class Basic9test
+    class Basic09test
     {
         [Test]
         [TestCase(new []{2,2,2,2}, 2)]
@@ -20,10 +20,10 @@ namespace TestProject1.SimpleTasks
         public void Basic9(int [] numbers, double expectedResult)
         {
             double result = AvarageNumber(numbers.ToList());
-
             result.Should().BeApproximately(expectedResult, 0.01);
         }
 
+        // List<int> --> double
         public static double AvarageNumber(List<int> numbers)
         {
             int sum = 0;
@@ -31,9 +31,8 @@ namespace TestProject1.SimpleTasks
             for (int i = 0; i < numbers.Count; i++)
             {
                 sum += numbers[i];
-                result = sum / (double)numbers.Count;
             }
-
+            result = sum / (double)numbers.Count;
             return result;
         }
     }

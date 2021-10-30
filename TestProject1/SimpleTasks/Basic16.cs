@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentAssertions;
 using NUnit.Framework;
+using System.Linq;
 
 namespace TestProject1.SimpleTasks
 {
@@ -12,40 +9,35 @@ namespace TestProject1.SimpleTasks
     [TestFixture]
     class Basic16test
     {
-        public static string ChangeIndex(string text)
+        [Test]
+        [TestCase("hello", "oellh")]
+        [TestCase("ab", "ba")]
+        [TestCase("a", "a")]
+        [TestCase("", "")]
+        public void Basic16(string input, string expectedResult)
         {
+            string result = SwapFirstAndLast(input);
+            result.Should().Be(expectedResult);
+        }
+
+        public static string SwapFirstAndLast(string text)
+        {
+            if (text.Length <= 1) 
+                return text;
+
+            char first = text.First();
+            char last = text.Last();
+
+            string tmp = text.Remove(0, 1);
+            tmp = tmp.Remove(tmp.Length - 1, 1);
+
+            //string result = last + tmp + first;
+            //string result = $"{last}{tmp}{first}";
+            string result = string.Concat(last, tmp, first);
 
 
-            // split string into words
-            var words = new List<string>();
-            string change = "";
-            while (text.Length > 0)
-            {
-                int indexOfSpace = text.IndexOf(' ');
 
-                if (indexOfSpace == -1)
-                {
-                    words.Add(text);
-                    text = "";
-                }
-                else
-                {
-                    string word = text.Substring(0, indexOfSpace);
-                    words.Add(word);
-                    text = text.Substring(indexOfSpace + 1);
-                }
-            }
-
-            // find longest word
-            foreach (string item in words)
-            {
-                if (item.Length > change.Length)
-                {
-                    change = item;
-                }
-            }
-
-            return change;
+            return result;
         }
     }
 }
