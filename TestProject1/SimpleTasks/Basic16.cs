@@ -1,5 +1,4 @@
-﻿using System;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
 using System.Linq;
 
@@ -34,9 +33,7 @@ namespace TestProject1.SimpleTasks
             //string result = last + tmp + first;
             //string result = $"{last}{tmp}{first}";
             string result = string.Concat(last, tmp, first);
-
-
-
+            
             return result;
         }
     }

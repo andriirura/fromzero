@@ -12,7 +12,9 @@ namespace Shifr
         {
            //GameCardExperiment.Run();
 
-           Classes.Run();
+           //Classes.Run();
+
+           BinaryFun.Run();
         }
     }
 }
