@@ -27,8 +27,9 @@ namespace TestProject1.SimpleTasks
                     return text;
 
                 char first = text.First();
-                string result = first + text + first;
-                //.insert?
+                // string result = first + text + first;
+                string result = text.Insert(0, first.ToString());
+                result = result.Insert(result.Length, first.ToString());
 
                 return result;
             }
